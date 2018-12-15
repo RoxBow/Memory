@@ -1,0 +1,18 @@
+.wrapperScore {
+    position: relative;
+    background: url('../../img/background_score.png') no-repeat 100%;
+    background-size: 100%;
+    width: 200px;
+    height: 80px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    margin-left: 4rem;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    left: 116px;
+    font-size: 2rem;
+    margin: 0;
+}

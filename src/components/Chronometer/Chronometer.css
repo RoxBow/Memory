@@ -1,0 +1,17 @@
+.wrapperChrono {
+    position: relative;
+    background: url('../../img/background_timer.png') no-repeat 100%;
+    background-size: 100%;
+    width: 200px;
+    height: 80px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+}
+
+.chrono {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    margin: 0;
+    font-size: 2rem;
+}

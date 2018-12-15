@@ -1,0 +1,14 @@
+.card img {
+  width: 100px;
+  height: 140px;
+  margin: 1rem;
+}
+
+.card.hide img {
+  background: black;
+}
+
+img.card {
+  box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
