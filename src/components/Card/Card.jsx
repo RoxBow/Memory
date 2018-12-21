@@ -27,13 +27,28 @@ class Card extends React.Component {
     this.onToggleCard = this.onToggleCard.bind(this);
   };
 
+  getIndex(el) {
+    var children = el.parentNode.childNodes,
+        i = 0;
+    for (; i < children.length; i++) {
+        if (children[i] === el) {
+            return i;
+        }
+    }
+    return -1;
+}
+
   onToggleCard(e){
     const { cards, cardSelected, value, checkSameCard, selectCard } = this.props;
 
-    // get index div (card) selected
-    const indexCardSelected = Array.from(e.target.parentNode.parentNode.children).indexOf(
-      e.target.parentNode
-    );
+    let indexCardSelected = this.getIndex(e.target);
+
+    if(indexCardSelected === 0){
+      // get index div (card) selected
+      indexCardSelected = Array.from(e.target.parentNode.parentNode.children).indexOf(
+        e.target.parentNode
+      );
+    }
 
     // prevent clicked on card already selected
     if (cards[indexCardSelected].state === SELECTION) return;

@@ -54,6 +54,7 @@ const gameReducer = (state = initialState, action) => {
       };
 
     case SELECT_CARD: {
+      console.log('indexCardSelected', action.indexCardSelected)
       return {
         ...state,
         cardSelected: [...state.cardSelected, action.cardClicked],
