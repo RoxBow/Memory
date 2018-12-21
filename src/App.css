@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     /* background: url('../src/img/texture.jpg') */
+    user-select: none;
 }
 
 .title {
@@ -21,4 +22,22 @@
     align-items: center;
     margin-bottom: 3rem;
     margin-top: 2rem;
+}
+
+.wrapperWin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.wrapperTexte {
+    display: flex;
+    align-items: center;
+}
+
+.wrapperWin .wrapperScore {
+    margin-left: 0;
+    margin-bottom: 2rem;
 }

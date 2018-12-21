@@ -7,6 +7,8 @@ import Score from './components/Score/Score';
 
 import './App.css';
 
+const pictoWin = require('./img/win.svg');
+
 const mapDispatchToProps = dispatch => ({
   fetchCards: () => dispatch(fetchCards())
 });
@@ -35,8 +37,12 @@ class App extends Component {
             <Board />
           </div>
         ) : (
-          <div>
-            Félicitation tu as gagné <Score />
+          <div className="wrapperWin">
+            <Score />
+            <div className="wrapperTexte">
+              <p>Félicitation tu as gagné</p>
+              <img className="pictoWin" src={pictoWin} alt="Picto win" />
+            </div>
           </div>
         )}
       </div>
